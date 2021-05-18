@@ -15,7 +15,7 @@ module load cellranger/3.0.0
 #############################################################                                              
 # INPUT PARAMS                                                                     
 #############################################################                                              
-TRANSCRIPTOME_DIR=/projects/fs5/ParmarLab/GRCH38_and_Rnor6
+TRANSCRIPTOME_DIR=[PATH_TO_TRANSCRIPTOME_FILE]
 PROJECT="SCvsSN"
 SAMPLE="1_humgraft_rat11_1a"
 #PROJECTNAME=“10XscAle”                                                                 
@@ -23,7 +23,7 @@ SAMPLE="1_humgraft_rat11_1a"
 # OUTPUT PARAMS                                                                     
 #############################################################                                              
 CELLRANGER_ID=$SAMPLE"_CombHg38"
-FASTQ_PATH="/projects/fs5/ParmarLab/GEO_TikolavaEtal"
+FASTQ_PATH=[PATH_TO_FASTQ FILES]
 
 #############################################################                                              
 # Running on multiple cores                                                               
