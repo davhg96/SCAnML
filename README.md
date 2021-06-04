@@ -1,28 +1,15 @@
 
-
-Single cell and single nuclei dataset analysis.
+Application of machine learning algorithms and analysis of sc/sn RNA sequencing datasets in rat model of Parkinson’s disease
 ===
-Parkinson’s disease (PD) is the most common neurodegenerative disorder, characterized by slow progressive loss of 
-dopamine (DA) neurons in midbrain. Although the relatively focal degeneration in PD makes it a good candidate for 
-cell-based therapies, obtaining cell source on large scale clinical application remains a challenge. It has now been 
-shown that functional dopamine neurons can be generated using stem cells and these cells are both safe and functional 
-when transplanted in animal models of Parkinson’s disease. Intensive research efforts have been made in recent years to 
-understand the molecular mechanisms controlling the developmental program and differentiation of DA neurons using 
-advanced technologies like single cell RNA sequencing. Transcriptional profiling of these cells will provide a complete 
-cellular composition of human midbrain. It will also help in determining the diversity of dopaminergic neurons, which is
-so far largely unknown due to the absence of molecular markers. Altogether these findings will help us understanding 
-cell identity and molecular mechanisms underlying cell fate decisions of ventral midbrain neuron sub type during stem 
-cell differentiation. However, fast paced growth in generation of these datasets also requires better optimization and 
-development of bioinformatics algorithms. 
+Parkinson’s disease (PD) is the most common neurodegenerative disorder, haracterized by slow progressive loss of dopamine (DA) neurons in midbrain. Although the relatively focal degeneration in PD makes it a good candidate for cell-based therapies, obtaining cell source on large scale clinical application remains a challenge. It has now been shown that functional dopamine neurons can be  generated using stem cells and these cells are both safe and functional when transplanted in animal models of Parkinson’s disease. Intensive research efforts have been made in recent years to understand the molecular mechanisms controlling the developmental program and differentiation of DA neurons using advanced technologies like single cell RNA sequencing. Transcriptional profiling of these cells will provide a complete cellular composition of human midbrain. It will also help in determining the diversity of dopaminergic neurons, which is so far largely unknown due to the absence of molecular markers. 
 
-Here in this thesis, we focus on analyzing and integrating single cell and single nuclei datasets obtained from grafted 
-cells obtained after different time points of transplantation in rat model of PD. We developed a machine learning based 
-model to integrate these large-scale datasets, which can be further trained and easily distributed and replicated to other 
-similar studies in the field.
+Altogether these findings will help us understanding cell identity and molecular mechanisms underlying cell fate decisions of ventral midbrain neuron sub type during stem cell differentiation. However, fast paced growth in generation of these datasets also requires better optimization and development of bioinformatics algorithms. 
+
+Here in this thesis, we focus on analyzing and integrating single cell and single nuclei datasets obtained from grafted cells obtained after different time points of transplantation in rat model of PD. We developed a machine learning based model to integrate these large-scale datasets, which can be further trained and easily distributed and replicated to other similar studies in the field.
 
 Please note that code for the other subprojects in this thesis can be found on different repositories:
 - [Analysis of long non coding and non coding genes](https://github.com/davhg96/SC_lncRNA.git)
-- [Serotoninergic progenitor analysis](https://github.com/davhg96/SerotinergicProgenitors.git)
+- [Serotonergic progenitor analysis](https://github.com/davhg96/SerotinergicProgenitors.git)
 
 
 Host cell population analysis and label transfer using a machine learning approach.
@@ -85,12 +72,11 @@ Once the datasets were analysed we proceeded to perform the machine learning ana
 neuronal subtypes found on single nuclei data were labeled as neurons, so they were comparable to single cell data:
 - [Technology based learning](./src/analysis/celltypes_SCSN_autoenc.ipynb): Was used to build a model based on the sequence
  technology used. Single cell is used to pre train our model and predict cell types on single nuclei data. This script 
- was used twice, the first time with 300 surgery epochs and the second with 600, both with diminishing results in accuracy.
+  was used twice, the first time with 300 surgery epochs and the second with 600, both with diminishing results in accuracy.
 - [Sample based learning](./src/analysis/celltypes_SCSN_sample_separated.ipynb): Was used to build a model based on the 
  sample tags. Single cell data is used to pre train our model providing the sample annotations as a source of variability.
 - [Combined technology sample based learning](./src/analysis/celltypes_SCSN_sample_combined_training.ipynb): Was used
  to build a model based on the sample labels but in this cases samples from both sequencing technologies were provided for 
- pre training. This model was the best performer in accuracy and integration.
+  pre training. This model was the best performer in accuracy and integration.
 - [Supplementary plotting](./src/analysis/combined%20plotting.ipynb): Contains the code used to produce extra plots outside 
 standard workflows.
-  
