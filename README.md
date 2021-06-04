@@ -9,7 +9,7 @@ Here in this thesis, we focus on analyzing and integrating single cell and singl
 
 Please note that code for the other subprojects in this thesis can be found on different repositories:
 - [Analysis of long non coding and non coding genes](https://github.com/davhg96/SC_lncRNA.git)
-- [Serotonergic progenitor analysis](https://github.com/davhg96/SerotinergicProgenitors.git)
+- [Serotonergic progenitor analysis](https://github.com/davhg96/SerotonergicProgenitors.git)
 
 
 Host cell population analysis and label transfer using a machine learning approach.
@@ -18,7 +18,7 @@ Data availability
 ---
 For data availability please refer to the next references:
 - [Analysis of long non coding and non coding genes](https://doi.org/10.3390/cells10010137)
-- [Serotoninergic progenitor analysis](https://doi.org/10.1101/2020.10.01.322495)
+- [Serotonergic progenitor analysis](https://doi.org/10.1101/2020.10.01.322495)
 - [Host cell analysis](https://doi.org/10.1038/s41467-020-16225-5)
 - Single Nuclei data: Data not available.
 
